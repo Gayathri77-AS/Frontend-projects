@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <!--react lib-->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!--react dom library-->
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!--babel library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+    <title>Lets react!</title>
+</head>
+<body>
+    <!--designated location to insert react content-->
+    <div id="app">react has not rendered yet</div>   
+    <div id="paragraph"></div>  
+    <div id="anchor"></div>
+    <div id="list"></div>
+    
+    <!--javascript-->
+    <script type="text/babel">
+        ReactDOM.render(
+            <h1>Hello World</h1>,
+            document.getElementById("app")
+        );
+        ReactDOM.render(
+            <p>I'm a paragraph</p>,
+            document.getElementById("paragraph")
+        );
+        ReactDOM.render(
+            <a href="https://www.google.com">Visit GOOGLE</a>,
+            document.getElementById("anchor")
+        );
+        ReactDOM.render(
+            <ul><li>Character</li><li>Trust</li><li>Love</li></ul>,
+            document.getElementById("list")
+        );
+
+    </script>
+</body>
+</html>
