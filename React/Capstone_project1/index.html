@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--react lib-->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!--react dom library-->
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!--babel library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Friendly</title>
+</head>
+<body>
+    <div id="app">React has not rendered yet ....</div>
+
+    <script type="text/babel">
+        
+        function Friendly(){
+            return(
+                <div>
+                    <Avatar/>
+                    <UserName/>
+                    <GetConnected/>
+                </div>
+            );
+        }
+
+        function Avatar(){
+            return(
+                <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="my pic"/>
+            );
+        }
+
+        function UserName(){
+            return(
+                <h1>Flower</h1>
+            );
+        }
+
+        function GetConnected(){
+            return(
+                <div>
+                    <Like/>
+                    <Share/>
+                    <Add/>
+                </div>
+            );
+        }
+
+        function Like(){
+            return(
+                <div>
+                    
+                </div>
+            );
+        }
+
+        function Share(){
+            return(
+                <div></div>
+            );
+        }
+
+        function Add(){
+            return(
+                <div></div>
+            );
+        }
+
+        ReactDOM.render(
+            <Friendly/>,
+            document.getElementById("app")
+        );
+    </script>
+
+</body>
+</html>
